@@ -1,10 +1,6 @@
 ﻿using KlientuValdymoSistema.Model;
 using KlientuValdymoSistema.UI.Data;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace KlientuValdymoSistema.UI.ViewModel
@@ -21,9 +17,9 @@ namespace KlientuValdymoSistema.UI.ViewModel
             _klientuDataService = klientuDataService;
         }
 
-        public void Load()
+        public async Task LoadAsync()
         {
-            var klientai = _klientuDataService.GautiVisus();
+            var klientai = await _klientuDataService.GautiVisus();
             Klientas.Clear();
             foreach (var klientas in klientai)
             {

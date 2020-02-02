@@ -1,6 +1,8 @@
-﻿using KlientuValdymoSistema.Model;
+﻿using KlientuValdymoSistema.DataAccess;
+using KlientuValdymoSistema.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +11,19 @@ namespace KlientuValdymoSistema.UI.Data
 {
     class KlientuDataService : IKlientuDataService
     {
-        public IEnumerable<Klientas> GautiVisus()
+        private Func<KlientuValdymoSistemaDbContext> _contextCreator;
+
+        public KlientuDataService(Func<KlientuValdymoSistemaDbContext> contextCreator)
         {
-            yield return new Klientas { Vardas = "Tomas", Pavarde = "Tomilinas" };
-            yield return new Klientas { Vardas = "Andrius", Pavarde = "Kubilius" };
-            yield return new Klientas { Vardas = "Ruta", Pavarde = "Tomiliene" };
+            _contextCreator = contextCreator;
+        }
+        public async Task<List<Klientas>> GautiVisus()
+        {
+            using (var ctx = _contextCreator())
+            {
+                return await ctx.Klientai.AsNoTracking().ToListAsync();
+                
+            }
         }
     }
 }

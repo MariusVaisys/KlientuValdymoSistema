@@ -1,4 +1,5 @@
 ﻿using Autofac;
+using KlientuValdymoSistema.DataAccess;
 using KlientuValdymoSistema.UI.Data;
 using KlientuValdymoSistema.UI.ViewModel;
 using System;
@@ -14,6 +15,9 @@ namespace KlientuValdymoSistema.UI.Startup
         public IContainer Bootstrap()
         {
             var builder = new ContainerBuilder();
+
+            builder.RegisterType<KlientuValdymoSistemaDbContext>().AsSelf();
+
             builder.RegisterType<MainWindow>().AsSelf();
             builder.RegisterType<MainViewModel>().AsSelf();
             builder.RegisterType<KlientuDataService>().As<IKlientuDataService>();

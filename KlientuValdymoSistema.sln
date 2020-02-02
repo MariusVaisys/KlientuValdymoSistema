@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlientuValdymoSistema.UI", "KlientuValdymoSistema.UI\KlientuValdymoSistema.UI.csproj", "{7DB0F283-8262-4258-838F-F0B195E7C12A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlientuValdymoSistema.DataAccess", "KlientuValdymoSistema.DataAccess\KlientuValdymoSistema.DataAccess.csproj", "{F7433256-3514-4FC0-A735-3FABACC210F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KlientuValdymoSistema.Model", "KlientuValdymoSistema.Model\KlientuValdymoSistema.Model.csproj", "{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlientuValdymoSistema.Model", "KlientuValdymoSistema.Model\KlientuValdymoSistema.Model.csproj", "{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KlientuValdymoSistema.DataAccess", "ClassLibrary2\KlientuValdymoSistema.DataAccess.csproj", "{D410CE3A-1A92-4CDB-BD59-EE3B0CBC2813}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{7DB0F283-8262-4258-838F-F0B195E7C12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7DB0F283-8262-4258-838F-F0B195E7C12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7DB0F283-8262-4258-838F-F0B195E7C12A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7433256-3514-4FC0-A735-3FABACC210F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7433256-3514-4FC0-A735-3FABACC210F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7433256-3514-4FC0-A735-3FABACC210F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7433256-3514-4FC0-A735-3FABACC210F2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A60D11-9B4C-496E-AF02-AA97ED8A91BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D410CE3A-1A92-4CDB-BD59-EE3B0CBC2813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D410CE3A-1A92-4CDB-BD59-EE3B0CBC2813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D410CE3A-1A92-4CDB-BD59-EE3B0CBC2813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D410CE3A-1A92-4CDB-BD59-EE3B0CBC2813}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
